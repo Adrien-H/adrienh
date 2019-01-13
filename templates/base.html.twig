@@ -1,0 +1,21 @@
+{% trans_default_domain 'site' %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}{% trans %}site.title{% endtrans %}{% endblock %}</title>
+
+    {# todo: og/twitter #}
+    <meta name="author" content="{% trans %}site.meta.author{% endtrans %}">
+    <meta name="description" content="{% trans %}site.meta.description{% endtrans %}"/>
+    <meta name="keywords" content="{% trans %}site.meta.keywords{% endtrans %}"/>
+    <meta name="robots" content="{% trans %}site.meta.robots{% endtrans %}"/>
+
+    {% block stylesheets %}{% endblock %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+  </body>
+</html>
