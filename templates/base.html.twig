@@ -12,10 +12,16 @@
     <meta name="keywords" content="{% trans %}site.meta.keywords{% endtrans %}"/>
     <meta name="robots" content="{% trans %}site.meta.robots{% endtrans %}"/>
 
-    {% block stylesheets %}{% endblock %}
+    {% block stylesheets %}
+      <link rel="stylesheet" href="build/app.css">
+    {% endblock %}
   </head>
   <body>
-    {% block body %}{% endblock %}
-    {% block javascripts %}{% endblock %}
+    <main>
+      {% block body %}{% endblock %}
+    </main>
+    {% block javascripts %}
+      <script src="build/app.js"></script>
+    {% endblock %}
   </body>
 </html>

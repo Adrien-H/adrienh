@@ -1,0 +1,14 @@
+ul {
+  padding: 4px;
+  li {
+    padding: 12px 8px;
+    border-bottom: 1px solid rgba($black, 0.2);
+    transition: all 0.1s ease-out;
+    &:first-child {
+      border-top: 1px solid rgba($black, 0.2);
+    }
+    &:hover {
+      background-color: rgba($black, 0.1);
+    }
+  }
+}
