@@ -13,9 +13,13 @@ service where I don't have access to environment variables. (:
 ##### Development 
 ```bash
 $ composer install
+$ npm install
+$ npm run dev
 ```
 
 ##### Production
 ```bash
 $ composer install --no-dev -o -a
+$ npm install
+$ npm run build
 ```

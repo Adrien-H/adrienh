@@ -1,0 +1,52 @@
+// ________
+
+// Libs
+@import "../../node_modules/paradoxe/paradoxe";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+// Includes and commons
+@import "includes/colours";
+@import "includes/mixins";
+@import "includes/classes";
+@import "commons/titles";
+@import "commons/forms";
+@import "commons/links";
+
+// Components
+@import "components/splash-block";
+
+// ________
+
+// Globals
+
+body {
+  background: linear-gradient(210deg, $white 0%, $light-green 100%);
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  background-color: rgba($black, 0.9);
+}
+
+main {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px 10px;
+  background-color: rgba($black, 0.6);
+
+  @media screen and (min-width: 850px) {
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba($black, 0.7);
+  }
+}
+
+section {
+  padding: 8px;
+}
+
+::-webkit-selection {
+  background-color: rgba($black, 0.9);
+  color: rgba($white, 0.9);
+}
