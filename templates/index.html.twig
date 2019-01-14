@@ -1,5 +1,38 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-  <h1>Salut</h1>
+{% block main %}
+  <div class="splash-block">
+    <h1>{% trans from 'site' %}site.title{% endtrans %}</h1>
+    <h2>{% trans from 'site' %}site.subtitle{% endtrans %}</h2>
+    <hr/>
+    <p class="black-sticker">{% trans from 'infos' %}infos.place.availability{% endtrans %}</p>
+    <hr/>
+    <ul class="flow">
+      <li class="black-sticker a12 b6 c3">Symfony 4</li>
+      <li class="black-sticker a12 b6 c3">Vue.js</li>
+      <li class="black-sticker a12 b6 c3">Drupal</li>
+      <li class="black-sticker a12 b6 c3">Wordpress</li>
+    </ul>
+    <hr/>
+    <p>Me contacter directement ou via mon profil Malt. (:</p>
+    <hr/>
+    <p>
+      <span class="fa fa-phone">&nbsp;{% trans from 'infos' %}infos.phone{% endtrans %}</span>
+    </p>
+    <p>
+      <span class="fa fa-pencil">
+        &nbsp;<a href="mailto:{% trans from 'infos' %}infos.mail{% endtrans %}">{% trans from 'infos' %}infos.mail{% endtrans %}</a>
+      </span>
+    </p>
+    <p>
+      <span class="fa fa-github">
+        &nbsp;<a href="{% trans from 'infos' %}infos.github.url{% endtrans %}" target="_blank">{% trans from 'infos' %}infos.github.title{% endtrans %}</a>
+      </span>
+    </p>
+    <p>
+      <span class="fa fa-address-book">
+        &nbsp;<a href="{% trans from 'infos' %}infos.malt.url{% endtrans %}" target="_blank">{% trans from 'infos' %}infos.malt.title{% endtrans %}</a>
+      </span>
+    </p>
+  </div>
 {% endblock %}
